@@ -1,6 +1,6 @@
 # Flask Mailroom Application
 
-Running at [http://afternoon-reef-51666.herokuapp.com/donations/](http://afternoon-reef-51666.herokuapp.com/donations/).
+Not able to run at [https://boiling-dawn-19532.herokuapp.com/](https://boiling-dawn-19532.herokuapp.com/). I couldn't fully pip install the requirements.txt. When I tried posting on heroku, I had AttributeError: 'NoneType' object has no attribute 'encode'.
 
 ## Your Task
 
