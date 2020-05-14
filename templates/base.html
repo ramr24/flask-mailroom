@@ -1,0 +1,16 @@
+<!-- base.html -->
+
+<html>
+<head>
+<title>Mailroom</title>
+</head>
+<body>
+	<nav>
+		<a id='all-donations' href="{{ url_for('all') }}">All Donations</a>
+		<a id='create-donations' href="{{ url_for('create') }}">Create Donation</a>
+	</nav>
+	<h1>Donations</h1>
+	<h2>{% block subtitle %} {% endblock subtitle %}</h2>
+	{% block content %} {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!-- create.html -->
+
+{% extends 'base.html' %}
+
+{% block subtitle %}Create Donation{% endblock subtitle %}
+
+{% block content %}
+<form method="POST">
+	<label for='name-input'>Donor Name: </label><input id='name-input' type="text" name="name"><br>
+	<label for='donation-input'>Donation Amount: </label><input id='donation-amount' type="number" name="donation"><br>
+	<input type="submit" value="Create Donation">
+</form>
+
+{% endblock content %}

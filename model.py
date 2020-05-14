@@ -1,5 +1,4 @@
 import os
-
 from peewee import Model, CharField, IntegerField, ForeignKeyField
 from playhouse.db_url import connect
 
@@ -11,10 +10,10 @@ class Donor(Model):
     class Meta:
         database = db
 
+
 class Donation(Model):
     value = IntegerField()
     donor = ForeignKeyField(Donor, backref='donations')
 
     class Meta:
         database = db
-
